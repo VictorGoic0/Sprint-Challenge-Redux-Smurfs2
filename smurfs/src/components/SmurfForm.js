@@ -14,7 +14,7 @@ class SmurfForm extends Component {
 
   addSmurf = (e, smurf) => {
     e.preventDefault();
-    this.props.addSmurf(smurf);
+    this.props.addSmurf(smurf)
     this.props.history.push("/")
   }
 

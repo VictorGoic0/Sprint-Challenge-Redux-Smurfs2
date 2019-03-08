@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import './Smurf.css';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { deleteSmurf } from '../actions';
 
 class Smurf extends Component {
+  deleteSmurf = (e, id) => {
+    e.preventDefault();
+    this.props.deleteSmurf(id);
+  }
+
   render() {
     return (
       <div className="Smurf">
 
       <header>
         <h2>{this.props.smurf.name}</h2>
-        <button onClick={e => this.deleteSmurf(e, this.smurf.props.id)}>X</button>
+        <button onClick={e => this.deleteSmurf(e, this.props.smurf.id)}>X</button>
       </header>
 
       <div className="height">
@@ -37,4 +44,4 @@ class Smurf extends Component {
   }
 }
 
-export default Smurf;
+export default connect(null, { deleteSmurf })(Smurf)
