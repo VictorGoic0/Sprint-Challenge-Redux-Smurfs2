@@ -37,7 +37,7 @@ Follow these steps to start up my project:
 - [ ] **RUN** `yarn start` or `npm start` to get your API up and running on `http://localhost:3333`.
 - [ ] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an array of smurfs, which you can add, edit, or delete from using the app.
 - [ ] `cd` into `/smurfs`.
-- [ ] `run` `yarn start` or `npm start` to start up the React application.
+- [ ] **run** `yarn start` or `npm start` to start up the React application.
 
 **LOOK** at all the files you've been given for this project. One important file to note is `server.js`.
 We've added a typical `redux` file structure for you:
